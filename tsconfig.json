@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext"
+    ],
     "module": "commonjs",
-    "outDir": "dist"
+    "outDir": "dist",
   },
   "compileOnSave": false,
   "include": [

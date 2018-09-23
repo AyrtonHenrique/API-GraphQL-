@@ -1,10 +1,10 @@
 {
-  "name": "graphQL",
+  "name": "graphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/.bin/nodemon --delay 5 dist/index",
+    "dev": "set NODE_ENV=development & nodemon --delay 5 dist/index",
     "gulp": "node_modules/.bin/gulp build"
   },
   "keywords": [],
