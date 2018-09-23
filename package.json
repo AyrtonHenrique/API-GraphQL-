@@ -22,6 +22,7 @@
     "typescript": "2.5.3"
   },
   "dependencies": {
+    "@types/node": "8.0.34",
     "express": "4.16.2",
     "express-graphql": "0.6.11",
     "graphql": "0.11.7",
