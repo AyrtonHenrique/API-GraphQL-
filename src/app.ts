@@ -18,4 +18,4 @@ class App {
   }
 }
 
-export default new App().express;
+export default new App().express; 
