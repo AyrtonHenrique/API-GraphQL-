@@ -1,19 +1,18 @@
 "use strict";
-exports.__esModule = true;
-var express = require("express");
-var graphqlHTTP = require("express-graphql");
-var schema_1 = require("./graphql/schema");
-var App = /** @class */ (function () {
-    function App() {
+Object.defineProperty(exports, "__esModule", { value: true });
+const express = require("express");
+const graphqlHTTP = require("express-graphql");
+const schema_1 = require("./graphql/schema");
+class App {
+    constructor() {
         this.express = express();
         this.middleware();
     }
-    App.prototype.middleware = function () {
+    middleware() {
         this.express.use('/graphql', graphqlHTTP({
-            schema: schema_1["default"],
+            schema: schema_1.default,
             graphiql: process.env.NODE_ENV.trim() === 'development'
         }));
-    };
-    return App;
-}());
-exports["default"] = new App().express;
+    }
+}
+exports.default = new App().express;
