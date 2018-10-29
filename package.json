@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "set NODE_ENV=development & nodemon --delay 5 dist/index",
     "gulp": "node_modules/.bin/gulp build",
-    "start": "NODE_ENV=development node ./dist/index.js"
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
