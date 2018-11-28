@@ -13,7 +13,7 @@ gulp.task('scripts', () => {
 
 gulp.task('static',() => {
 
-    return gulp.src(['src/**/*.json','src/web.config']) 
+    return gulp.src(['src/**/*.json','web.config']) 
           .pipe(gulp.dest('dist'));
 
 });

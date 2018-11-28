@@ -18,7 +18,7 @@ const commentTypes = `
 `;
 exports.commentTypes = commentTypes;
 const commentQueries = `
-    commenstByPost(id: ID!, first: Int, offset: Int): [ Comment! ]!
+    commenstByPost(postId: ID!, first: Int, offset: Int): [ Comment! ]!
 `;
 exports.commentQueries = commentQueries;
 const commentMutations = `

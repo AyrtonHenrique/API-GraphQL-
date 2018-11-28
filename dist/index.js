@@ -5,7 +5,7 @@ const app_1 = require("./app");
 const models_1 = require("./models");
 const utils_1 = require("./utils/utils");
 const server = http.createServer(app_1.default);
-const port = utils_1.normalizePort(process.env.port || 3030);
+const port = utils_1.normalizePort(process.env.port || 8080);
 models_1.default.sequelize.sync()
     .then(() => {
     server.listen(port);
